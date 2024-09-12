@@ -19,4 +19,4 @@ function validateUsr(username) {
     return validator.test(username);
   }
 
-  
+  const validateUsr = username => /^[a-z\d_]{4,16}$/.test(username);
